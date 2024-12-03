@@ -11,7 +11,7 @@ Please input the required details below to get a prediction.
 """)
 
 # Load the saved model
-model = joblib.load("DTC_hy.joblib")
+model = joblib.load("DTC.joblib")
 
 # Input features
 st.header("Enter the details for prediction:")
