@@ -6,18 +6,15 @@ import joblib
 st.title("Banking Campaign Outcome Prediction App")
 st.markdown("""
 Welcome to the **Banking Campaign Outcome Prediction App**!  
-This tool predicts whether a customer will respond positively to a banking campaign.  
+This tool predicts whether a customer will respond positively to a banking campaign based on their demographic and transactional information.  
 Please input the required details below to get a prediction.
 """)
 
-# Load the trained pipeline model
-
-model = joblib.load("DTC.joblib")
-st.success("Model loaded successfully!")
-
+# Load the saved model
+model = joblib.load("DTC_hy.joblib")
 
 # Input features
-st.header("Enter the customer details:")
+st.header("Enter the details for prediction:")
 
 # Numeric inputs
 age = st.number_input("Age", min_value=18, max_value=100, step=1)
@@ -32,21 +29,25 @@ euribor_3m_rate = st.number_input("Euribor 3M Rate", format="%.2f")
 number_employed = st.number_input("Number of People Employed", min_value=0, step=1)
 
 # Categorical inputs
-job = st.selectbox("Job", ["admin.", "blue-collar", "entrepreneur", "housemaid", "management", "retired", "self-employed", "services", "student", "technician", "unemployed", "unknown"])
+job = st.selectbox("Job", ["admin.", "blue-collar", "entrepreneur", "housemaid", "management", 
+                           "retired", "self-employed", "services", "student", "technician", 
+                           "unemployed", "unknown"])
 marital_status = st.selectbox("Marital Status", ["single", "married", "divorced", "unknown"])
 education_level = st.selectbox("Education Level", ["primary", "secondary", "tertiary", "unknown"])
 has_default = st.selectbox("Has Default?", ["yes", "no", "unknown"])
 has_housing_loan = st.selectbox("Has Housing Loan?", ["yes", "no", "unknown"])
 has_personal_loan = st.selectbox("Has Personal Loan?", ["yes", "no", "unknown"])
 contact_type = st.selectbox("Contact Type", ["cellular", "telephone"])
-contact_month = st.selectbox("Contact Month", ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"])
+contact_month = st.selectbox("Contact Month", ["jan", "feb", "mar", "apr", "may", 
+                                               "jun", "jul", "aug", "sep", "oct", 
+                                               "nov", "dec"])
 contact_day = st.selectbox("Contact Day", list(range(1, 32)))
 previous_outcome = st.selectbox("Previous Outcome", ["success", "failure", "nonexistent"])
 
-# Predict button
-if st.button("Predict"):
+# Button for prediction
+if st.button("Predict Outcome"):
     # Combine inputs into a dataframe
-    input_data = pd.DataFrame({
+    input_data = {
         "Age": [age],
         "Call_Duration_Seconds": [call_duration_seconds],
         "Contacts_During_Campaign": [contacts_during_campaign],
@@ -67,14 +68,13 @@ if st.button("Predict"):
         "Contact_Month": [contact_month],
         "Contact_Day": [contact_day],
         "Previous_Outcome": [previous_outcome],
-    })
+    }
+    input_df = pd.DataFrame(input_data)
 
     # Make prediction
     try:
-        prediction = model.predict(input_data)
-        result = "Positive Response" if prediction[0] == 1 else "Negative Response"
-        st.success(f"Prediction: {result}")
+        prediction = model.predict(input_df)
+        outcome = "Positive" if prediction[0] == 1 else "Negative"
+        st.success(f"Prediction: The customer is likely to respond with a {outcome} outcome.")
     except Exception as e:
         st.error(f"Error making prediction: {e}")
-
-
