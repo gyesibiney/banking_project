@@ -44,6 +44,7 @@ contact_month = st.selectbox("Contact Month", ["jan", "feb", "mar", "apr", "may"
 contact_day = st.selectbox("Contact Day", list(range(1, 32)))
 previous_outcome = st.selectbox("Previous Outcome", ["success", "failure", "nonexistent"])
 
+
 # Button for prediction
 if st.button("Predict Outcome"):
     # Combine inputs into a dataframe
@@ -72,9 +73,7 @@ if st.button("Predict Outcome"):
     input_df = pd.DataFrame(input_data)
 
     # Make prediction
-    try:
-        prediction = model.predict(input_df)
-        outcome = "Positive" if prediction[0] == 1 else "Negative"
-        st.success(f"Prediction: The customer is likely to respond with a {outcome} outcome.")
-    except Exception as e:
-        st.error(f"Error making prediction: {e}")
+
+    prediction = model.predict(input_df)
+    outcome = "Positive" if prediction[0] == 1 else "Negative"
+    st.success(f"Prediction: The customer is likely to respond with a {outcome} outcome.")
