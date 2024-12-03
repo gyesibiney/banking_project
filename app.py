@@ -75,5 +75,5 @@ if st.button("Predict Outcome"):
     # Make prediction
 
     prediction = model.predict(input_df)
-    outcome = "Positive" if prediction[0] == 1 else "Negative"
-    st.success(f"Prediction: The customer is likely to respond with a {outcome} outcome.")
+    outcome = "will subcribe to" if prediction[0] == 1 else "will not subcribe to"
+    st.success(f"Prediction: The customer {outcome} term deposit.")
