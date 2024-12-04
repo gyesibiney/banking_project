@@ -58,10 +58,12 @@ I express our gratitude to Azubi Africa datasets made this project possible.
 
 
 📞 Contact
+
 For any inquiries, feedback, or suggestions, please feel free to contact us at gyesidavid@gmail.com.
 
 
 👥 Author
+
 This project is developed and maintained by:
 David GYESI BINEY
 
