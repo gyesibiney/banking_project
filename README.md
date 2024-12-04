@@ -7,17 +7,22 @@ Banking Campaign Outcome Prediction Project 🚀
 |:-:|:------------------------:|:--------------------------------------------------------------:|:----------------------------------------------------------:|
 | 1 | Banking Prediction Project|  ([))                             | [https://huggingface.co/spaces/gyesibiney/banking_APP) |
 💡
-📚 Description
+
+📚 **Description**
+=======================
 This project focuses on predicting customer responses to banking campaigns using machine learning. By leveraging data from past campaigns, we built a robust model to analyze customer characteristics and behaviors, helping to optimize future marketing efforts.
 
-📖 Table of Contents
+📖 **Table of Contents**
+=======================
 Introduction
 Installation
 Usage
 Acknowledgements
 Contact
 Author
-🔧 Installation
+
+🔧 **Installation**
+---------------------
 To set up the environment and get started, follow these steps:
 
 bash
