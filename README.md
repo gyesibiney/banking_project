@@ -6,7 +6,8 @@ Banking Campaign Outcome Prediction Project 🚀
 |  | Project's Name          | Article Link                                                  | Deployment Link                                            |
 |:-:|:------------------------:|:--------------------------------------------------------------:|:----------------------------------------------------------:|
 | 1 | Banking Prediction Project|  ([))                             | [https://huggingface.co/spaces/gyesibiney/banking_APP) |
-💡
+
+
 
 📚 **Description**
 =======================
@@ -25,31 +26,38 @@ Author
 ---------------------
 To set up the environment and get started, follow these steps:
 
-bash
-Copy code
+🔧 **Installation**
+---------------------
+To set up the environment and get started, follow these installation steps:
+
+```bash
 # Clone the repository
 git clone https://github.com/gyesibiney/banking_project.git
 
 # Navigate to the project directory
-cd banking-campaign-prediction
+cd banking_project
 
 # Install required dependencies
 pip install -r requirements.txt
+```
+
+
 🚀 Usage
 To run the app, use the following command:
 
 bash
 Copy code
+```
 streamlit run app.py
 Once running, provide the customer details in the app interface to get a prediction about their likelihood of responding to a campaign.
-
+```
 
 ✨ Acknowledgements
 I express our gratitude to Azubi Africa datasets made this project possible.
 
 
 📞 Contact
-For any inquiries, feedback, or suggestions, please feel free to contact us at your-email@example.com.
+For any inquiries, feedback, or suggestions, please feel free to contact us at gyesidavid@gmail.com.
 
 
 👥 Author
