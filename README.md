@@ -43,15 +43,18 @@ Copy code
 streamlit run app.py
 Once running, provide the customer details in the app interface to get a prediction about their likelihood of responding to a campaign.
 
+
 ✨ Acknowledgements
 I express our gratitude to Azubi Africa datasets made this project possible.
+
 
 📞 Contact
 For any inquiries, feedback, or suggestions, please feel free to contact us at your-email@example.com.
 
+
 👥 Author
 This project is developed and maintained by:
-[David Gyesi Biney]
+David GYESI BINEY
 
 Connect with me on [LinkedIn](https://www.linkedin.com/in/david-gyesi-biney)
 
