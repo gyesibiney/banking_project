@@ -1,9 +1,12 @@
 
 Banking Campaign Outcome Prediction Project 🚀
-📚 SUMMARY TABLE 📚
-Project's Name	Article Link	Deployment Link
-1	Banking Campaign Outcome Prediction App	(Your Article Link)	App Deployment
-Banking Campaign Outcome Prediction: Enhancing Marketing Strategies 💡
+
+📚 **SUMMARY TABLE 📚**
+=========================
+|  | Project's Name          | Article Link                                                  | Deployment Link                                            |
+|:-:|:------------------------:|:--------------------------------------------------------------:|:----------------------------------------------------------:|
+| 1 | Banking Prediction Project|  ([))                             | [https://huggingface.co/spaces/gyesibiney/banking_APP) |
+💡
 📚 Description
 This project focuses on predicting customer responses to banking campaigns using machine learning. By leveraging data from past campaigns, we built a robust model to analyze customer characteristics and behaviors, helping to optimize future marketing efforts.
 
