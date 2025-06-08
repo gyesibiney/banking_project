@@ -5,7 +5,7 @@ Banking Campaign Outcome Prediction Project 🚀
 =========================
 |  | Project's Name          | Article Link                                                  | Deployment Link                                            |
 |:-:|:------------------------:|:--------------------------------------------------------------:|:----------------------------------------------------------:|
-| 1 | Banking Prediction Project|  ([))                             | [https://huggingface.co/spaces/gyesibiney/banking_APP) |
+| 1 | Banking Prediction Project|  ([))                             | [https://huggingface.co/spaces/gyesibiney/banking_APP](https://gyesibiney-banking-app.hf.space/docs#/default/predict_predict_get)) |
 
 
 
